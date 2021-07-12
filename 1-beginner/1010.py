@@ -1,0 +1,6 @@
+line1 = input()
+line2 = input()
+n1, amount1, price1 = line1.split(' ')
+n2, amount2, price2 = line2.split(' ')
+total = (int(amount1) * float(price1)) + (int(amount2) * float(price2))
+print('VALOR A PAGAR: R$ {:.2f}'.format(total))
