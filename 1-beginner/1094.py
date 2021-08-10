@@ -1,0 +1,13 @@
+n = int(input())
+animals = [input() for _ in range(n)]
+n_animals = sum([int(value.split(' ')[0]) for value in animals])
+n_rabbits = sum([int(value.split(' ')[0]) for value in animals if 'C' in value])
+n_mouses = sum([int(value.split(' ')[0]) for value in animals if 'R' in value])
+n_frogs = sum([int(value.split(' ')[0]) for value in animals if 'S' in value])
+print('Total: {} cobaias'.format(n_animals))
+print('Total de coelhos: {}'.format(n_rabbits))
+print('Total de ratos: {}'.format(n_mouses))
+print('Total de sapos: {}'.format(n_frogs))
+print('Percentual de coelhos: {:.2f} %'.format(n_rabbits / n_animals * 100))
+print('Percentual de ratos: {:.2f} %'.format(n_mouses / n_animals * 100))
+print('Percentual de sapos: {:.2f} %'.format(n_frogs / n_animals * 100))
