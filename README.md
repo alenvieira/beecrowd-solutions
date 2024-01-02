@@ -1,1 +1,3 @@
-# uri-online-judge-solutions
+# beecrowd-solutions
+
+https://www.beecrowd.com.br
